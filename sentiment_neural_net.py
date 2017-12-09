@@ -74,6 +74,7 @@ def train_neural_network(x):
 
         # Setting time before training
         timeBeforeTraining = datetime.now()
+        print("Begin training:")
 
         for epoch in range(n_epochs):
             epoch_loss = 0
@@ -90,7 +91,7 @@ def train_neural_network(x):
                 epoch_loss += c
                 i += batch_size
 
-            print('Epoch', epoch, 'completed out of', n_epochs, 'loss:', epoch_loss)
+            print('Epoch', epoch+1, 'completed out of', n_epochs, 'loss:', epoch_loss)
 
         # Setting time after Training and calculate the difference
         timeAfterTraining = datetime.now()
